@@ -1,6 +1,10 @@
 let tVenta = 0
 let tCompra = 0
 
+document.getElementById("totalVentas").innerHTML = tVenta;
+
+document.getElementById("totalCompras").innerHTML = tCompra;
+
 function iva() {
     if (ivaBasico.checked == true) {
         return 22;
@@ -36,6 +40,7 @@ function total() {
 }
 
 
+
 document.getElementById("ingresar").addEventListener("click", () => {
     let desc = document.getElementById("desc").value;
 
@@ -48,7 +53,7 @@ document.getElementById("ingresar").addEventListener("click", () => {
 
     let subTotal = document.getElementById("subTotal").value;
 
-
+    
 
 
 
