@@ -13,32 +13,40 @@ function iva() {
     }
 }
 
-function total() {
+function tipoTotal() {
     if (venta.checked == true) {
-        return "Compra"
+        return "Compra";
     }
     if (venta.checked == true) {
-        return "Venta"
+        return "Venta";
     }
 }
 
 function tIva() {
-    return subTotal + (subTotal/100)*iva();
+    return subTotal + ((subTotal / 100) * iva());
 }
 
-function iva
+function total() {
+    if (tipoTotal() == "Compra") {
+        return tCompra += subTotal;
+    }
+    if (tipoTotal() == "Venta") {
+        return tVente += subTotal;
+    }
+}
 
-document.getElementById("").addEventListener("click", () => {
-    let desc = document.getElementById("").value;
 
-    let compra = document.getElementById("");
-    let venta = document.getElementById("");
+document.getElementById("ingresar").addEventListener("click", () => {
+    let desc = document.getElementById("desc").value;
 
-    let ivaBasico = document.getElementById("");
-    let ivaMinimo = document.getElementById("");
-    let ivaExento = document.getElementById("");
+    let compra = document.getElementById("tCompra");
+    let venta = document.getElementById("tVenta");
 
-    let subTotal = document.getElementById("").value;
+    let ivaBasico = document.getElementById("ivaBasico");
+    let ivaMinimo = document.getElementById("ivaMinimo");
+    let ivaExento = document.getElementById("ivaExento");
+
+    let subTotal = document.getElementById("subTotal").value;
 
 
 
