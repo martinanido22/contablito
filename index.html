@@ -8,8 +8,55 @@
 </head>
 <body>
     <form action="">
+<div>  
+    <label for="description" class="form-label" >Descripción</label>
+    <input type="text" class="form-control" id="description" required>
+</div>
 
-        
+<div>
+    <p>Tipo de transacción.</p>
+    <input type="radio" id="compra">
+    <label for="compra">Compra</label>
+    <input type="radio" id="venta" name="venta" value="venta">
+    <label for="venta">Venta</label>
+
+</div>
+
+<div>
+    <p>Tipo de IVA.</p>
+    <input type="radio" id="iva1">
+    <label for="iva1">Básico</label>
+    <input type="radio" id="iva2">
+    <label for="iva2">Mínimo</label>
+    <input type="radio" id="iva3">
+    <label for="iva3">Exento</label>
+
+</div>
+<div>  
+    <label for="subtotal" class="form-label" >Subtotal ($)</label>
+    <input type="number" class="form-control" id="subtotal" required>
+
+</div>
+
+<button>Ingresar</button>
     </form>
+    <tbody>
+        <tr>
+          <td>Descripción</td>
+        </tr>
+        <tr>
+          <th>Tipo</th>
+ 
+        </tr>
+        <tr>
+          <th>Subtotal($)</th>
+        </tr>
+        <tr>
+            <th>IVA($)</th>
+          </tr>
+          <tr>
+            <th>Total (IVA inc)</th>
+          </tr>
+      </tbody>
 </body>
 </html>
