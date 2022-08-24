@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <form action="">
-<div>  
-    <label for="description" class="form-label" >Descripción</label>
-    <input type="text" class="form-control" id="description" required>
-</div>
+        <div>
+            <label for="description" class="form-label">Descripción</label>
+            <input type="text" class="form-control" id="description" required>
+        </div>
 
-<div>
-    <p>Tipo de transacción.</p>
-    <input type="radio" id="compra">
-    <label for="compra">Compra</label>
-    <input type="radio" id="venta" name="venta" value="venta">
-    <label for="venta">Venta</label>
+        <div>
+            <p>Tipo de transacción.</p>
+            <input type="radio" id="compra">
+            <label for="compra">Compra</label>
+            <input type="radio" id="venta" name="venta" value="venta">
+            <label for="venta">Venta</label>
 
-</div>
+        </div>
 
-<div>
-    <p>Tipo de IVA.</p>
-    <input type="radio" id="iva1">
-    <label for="iva1">Básico</label>
-    <input type="radio" id="iva2">
-    <label for="iva2">Mínimo</label>
-    <input type="radio" id="iva3">
-    <label for="iva3">Exento</label>
+        <div>
+            <p>Tipo de IVA.</p>
+            <input type="radio" id="iva1">
+            <label for="iva1">Básico</label>
+            <input type="radio" id="iva2">
+            <label for="iva2">Mínimo</label>
+            <input type="radio" id="iva3">
+            <label for="iva3">Exento</label>
 
-</div>
-<div>  
-    <label for="subtotal" class="form-label" >Subtotal ($)</label>
-    <input type="number" class="form-control" id="subtotal" required>
+        </div>
+        <div>
+            <label for="subtotal" class="form-label">Subtotal ($)</label>
+            <input type="number" class="form-control" id="subtotal" required>
 
-</div>
+        </div>
 
-<button>Ingresar</button>
+        <button>Ingresar</button>
     </form>
     <table>
-    <tbody>
-        <tr>
-          <td>Descripción</td>
-          <td>Tipo</td>
-          <td>Subtotal($)</td>
-          <td>IVA($)</td>
-          <td>Total (IVA inc)</td>
-          </tr>
-      </tbody>
-        </table>
+        <tbody>
+            <tr>
+                <td>Descripción</td>
+                <td>Tipo</td>
+                <td>Subtotal($)</td>
+                <td>IVA($)</td>
+                <td>Total (IVA inc)</td>
+            </tr>
+            <tr>
+                <th id="description">prueba</th>
+                <th id="">prueba</th>
+                <th id="">prueba</th>
+                <th id="">prueba</th>
+                <th id="">prueba</th>
+            </tr>
+        </tbody>
+    </table>
 
- <p>Total Ventas: $<span id="totalVentas">0</span>        Total Compras: $<span id="totalCompras">0</span>  </p> 
+    <p>Total Ventas: $<span id="totalVentas">0</span> Total Compras: $<span id="totalCompras">0</span> </p>
 
-  
+
 </body>
+
 </html>
