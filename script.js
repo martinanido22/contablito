@@ -1,9 +1,9 @@
-let tVenta = 0
-let tCompra = 0
+let totalVenta = 0
+let totalCompra = 0
 
-document.getElementById("totalVentas").innerHTML = tVenta;
+document.getElementById("tipoVentas").innerHTML = tipoVenta;
 
-document.getElementById("totalCompras").innerHTML = tCompra;
+document.getElementById("tipoCompras").innerHTML = tipoCompra;
 
 function iva() {
     if (ivaBasico.checked == true) {
@@ -32,10 +32,10 @@ function tIva() {
 
 function total() {
     if (tipoTotal() == "Compra") {
-        return tCompra += subTotal;
+        return totalCompra += subTotal;
     }
     if (tipoTotal() == "Venta") {
-        return tVente += subTotal;
+        return totalVente += subTotal;
     }
 }
 
@@ -44,8 +44,8 @@ function total() {
 document.getElementById("ingresar").addEventListener("click", () => {
     let desc = document.getElementById("desc").value;
 
-    let compra = document.getElementById("tCompra");
-    let venta = document.getElementById("tVenta");
+    let compra = document.getElementById("tipoCompra");
+    let venta = document.getElementById("tipoVenta");
 
     let ivaBasico = document.getElementById("ivaBasico");
     let ivaMinimo = document.getElementById("ivaMinimo");
